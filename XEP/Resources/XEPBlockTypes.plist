@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>@</key>
+	<string>@{+-/</string>
+	<key>+</key>
+	<string>{;</string>
+	<key>typedef enum</key>
+	<string>;</string>
+	<key>struct</key>
+	<string>}</string>
+	<key>#define</key>
+	<string></string>
+	<key>-</key>
+	<string>{;</string>
+</dict>
+</plist>

@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E91FF64B162B0B350041D73F /* 01xep-contents.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF648162B0B350041D73F /* 01xep-contents.xml */; };
+		E91FF64C162B0B350041D73F /* 01xep.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF649162B0B350041D73F /* 01xep.xml */; };
+		E91FF64D162B0B350041D73F /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF64A162B0B350041D73F /* index.xml */; };
+		E922911D1631568000412B8A /* XEPXcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E922911C1631568000412B8A /* XEPXcode.m */; };
+		E922912516315ECA00412B8A /* XEPCfg.m in Sources */ = {isa = PBXBuildFile; fileRef = E922912416315EC900412B8A /* XEPCfg.m */; };
+		E92D376A1627FE2A0030E78E /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D37691627FE2A0030E78E /* DVTKit.framework */; };
+		E92D377116280BC40030E78E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D377016280BC40030E78E /* libicucore.dylib */; };
+		E958CB46162DB2BF004BFBA7 /* PrjEnv.cfg in Resources */ = {isa = PBXBuildFile; fileRef = E958CB40162DB2BE004BFBA7 /* PrjEnv.cfg */; };
+		E958CB47162DB2BF004BFBA7 /* uncrustify.cfg in Resources */ = {isa = PBXBuildFile; fileRef = E958CB41162DB2BE004BFBA7 /* uncrustify.cfg */; };
+		E958CB48162DB2BF004BFBA7 /* XEP.png in Resources */ = {isa = PBXBuildFile; fileRef = E958CB42162DB2BE004BFBA7 /* XEP.png */; };
+		E958CB49162DB2BF004BFBA7 /* XEPBlockTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = E958CB43162DB2BF004BFBA7 /* XEPBlockTypes.plist */; };
+		E958CB4A162DB2BF004BFBA7 /* XEPComment.lua in Resources */ = {isa = PBXBuildFile; fileRef = E958CB44162DB2BF004BFBA7 /* XEPComment.lua */; };
+		E958CB4B162DB2BF004BFBA7 /* XEPPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = E958CB45162DB2BF004BFBA7 /* XEPPreferences.plist */; };
+		E958CB54162DB2C8004BFBA7 /* NSFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E958CB4D162DB2C8004BFBA7 /* NSFLog.m */; };
+		E958CB55162DB2C8004BFBA7 /* NSLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = E958CB4F162DB2C8004BFBA7 /* NSLineString.m */; };
+		E958CB56162DB2C8004BFBA7 /* NSLua.m in Sources */ = {isa = PBXBuildFile; fileRef = E958CB51162DB2C8004BFBA7 /* NSLua.m */; };
+		E958CB57162DB2C8004BFBA7 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E958CB53162DB2C8004BFBA7 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E95941851631D0A4007431B9 /* XEPLua.m in Sources */ = {isa = PBXBuildFile; fileRef = E95941841631D0A4007431B9 /* XEPLua.m */; };
+		E98F5B12162694870062D8BD /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98F5B11162694870062D8BD /* IDEKit.framework */; };
+		E993D0291625578C00601734 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E993D0281625578C00601734 /* CoreFoundation.framework */; };
+		E993D02F1625578C00601734 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E993D02D1625578C00601734 /* InfoPlist.strings */; };
+		E993D05916255B9F00601734 /* XEPPluginMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = E993D05816255B9F00601734 /* XEPPluginMgr.m */; };
+		E993D05C16255C1C00601734 /* XEPPluginBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E993D05B16255C1C00601734 /* XEPPluginBase.m */; };
+		E993D05F16255CA000601734 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E993D05E16255CA000601734 /* AppKit.framework */; };
+		E993D06616255E5500601734 /* XEPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E993D06516255E5500601734 /* XEPMenu.m */; };
+		E9E737571627A648006758D9 /* XEPPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E737551627A648006758D9 /* XEPPreferences.m */; };
+		E9E737941627C155006758D9 /* XEPPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E737931627C155006758D9 /* XEPPreferences.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E91FF648162B0B350041D73F /* 01xep-contents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "01xep-contents.xml"; sourceTree = "<group>"; };
+		E91FF649162B0B350041D73F /* 01xep.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 01xep.xml; sourceTree = "<group>"; };
+		E91FF64A162B0B350041D73F /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xml; sourceTree = "<group>"; };
+		E922911B1631568000412B8A /* XEPXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPXcode.h; sourceTree = "<group>"; };
+		E922911C1631568000412B8A /* XEPXcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPXcode.m; sourceTree = "<group>"; };
+		E922912316315EC900412B8A /* XEPCfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPCfg.h; sourceTree = "<group>"; };
+		E922912416315EC900412B8A /* XEPCfg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPCfg.m; sourceTree = "<group>"; };
+		E92D37691627FE2A0030E78E /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<absolute>"; };
+		E92D377016280BC40030E78E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		E958CB40162DB2BE004BFBA7 /* PrjEnv.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PrjEnv.cfg; path = XEP/Resources/PrjEnv.cfg; sourceTree = "<group>"; };
+		E958CB41162DB2BE004BFBA7 /* uncrustify.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = uncrustify.cfg; path = XEP/Resources/uncrustify.cfg; sourceTree = "<group>"; };
+		E958CB42162DB2BE004BFBA7 /* XEP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = XEP.png; path = XEP/Resources/XEP.png; sourceTree = "<group>"; };
+		E958CB43162DB2BF004BFBA7 /* XEPBlockTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = XEPBlockTypes.plist; path = XEP/Resources/XEPBlockTypes.plist; sourceTree = "<group>"; };
+		E958CB44162DB2BF004BFBA7 /* XEPComment.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = XEPComment.lua; path = XEP/Resources/XEPComment.lua; sourceTree = "<group>"; };
+		E958CB45162DB2BF004BFBA7 /* XEPPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = XEPPreferences.plist; path = XEP/Resources/XEPPreferences.plist; sourceTree = "<group>"; };
+		E958CB4C162DB2C8004BFBA7 /* NSFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSFLog.h; path = XEP/Library/NSFLog.h; sourceTree = "<group>"; };
+		E958CB4D162DB2C8004BFBA7 /* NSFLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSFLog.m; path = XEP/Library/NSFLog.m; sourceTree = "<group>"; };
+		E958CB4E162DB2C8004BFBA7 /* NSLineString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSLineString.h; path = XEP/Library/NSLineString.h; sourceTree = "<group>"; };
+		E958CB4F162DB2C8004BFBA7 /* NSLineString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSLineString.m; path = XEP/Library/NSLineString.m; sourceTree = "<group>"; };
+		E958CB50162DB2C8004BFBA7 /* NSLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSLua.h; path = XEP/Library/NSLua.h; sourceTree = "<group>"; };
+		E958CB51162DB2C8004BFBA7 /* NSLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSLua.m; path = XEP/Library/NSLua.m; sourceTree = "<group>"; };
+		E958CB52162DB2C8004BFBA7 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = XEP/Library/RegexKitLite.h; sourceTree = "<group>"; };
+		E958CB53162DB2C8004BFBA7 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = XEP/Library/RegexKitLite.m; sourceTree = "<group>"; };
+		E95941831631D0A4007431B9 /* XEPLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPLua.h; sourceTree = "<group>"; };
+		E95941841631D0A4007431B9 /* XEPLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPLua.m; sourceTree = "<group>"; };
+		E98F5B11162694870062D8BD /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<absolute>"; };
+		E993D0251625578C00601734 /* XEP.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XEP.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E993D0281625578C00601734 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E993D02C1625578C00601734 /* XEP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XEP-Info.plist"; sourceTree = "<group>"; };
+		E993D02E1625578C00601734 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E993D0301625578C00601734 /* XEP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XEP-Prefix.pch"; sourceTree = "<group>"; };
+		E993D05716255B9F00601734 /* XEPPluginMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPPluginMgr.h; sourceTree = "<group>"; };
+		E993D05816255B9F00601734 /* XEPPluginMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPPluginMgr.m; sourceTree = "<group>"; };
+		E993D05A16255C1C00601734 /* XEPPluginBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPPluginBase.h; sourceTree = "<group>"; };
+		E993D05B16255C1C00601734 /* XEPPluginBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPPluginBase.m; sourceTree = "<group>"; };
+		E993D05D16255C4A00601734 /* XEPDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPDef.h; sourceTree = "<group>"; };
+		E993D05E16255CA000601734 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E993D06416255E5400601734 /* XEPMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPMenu.h; sourceTree = "<group>"; };
+		E993D06516255E5500601734 /* XEPMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPMenu.m; sourceTree = "<group>"; };
+		E9E737541627A648006758D9 /* XEPPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPPreferences.h; sourceTree = "<group>"; };
+		E9E737551627A648006758D9 /* XEPPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPPreferences.m; sourceTree = "<group>"; };
+		E9E7375B1627A95D006758D9 /* GeneralDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDef.h; sourceTree = "<group>"; };
+		E9E737931627C155006758D9 /* XEPPreferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XEPPreferences.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E993D0221625578C00601734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92D377116280BC40030E78E /* libicucore.dylib in Frameworks */,
+				E993D05F16255CA000601734 /* AppKit.framework in Frameworks */,
+				E993D0291625578C00601734 /* CoreFoundation.framework in Frameworks */,
+				E98F5B12162694870062D8BD /* IDEKit.framework in Frameworks */,
+				E92D376A1627FE2A0030E78E /* DVTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90BA8571626B4D700FB7F87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E958CB40162DB2BE004BFBA7 /* PrjEnv.cfg */,
+				E958CB41162DB2BE004BFBA7 /* uncrustify.cfg */,
+				E958CB42162DB2BE004BFBA7 /* XEP.png */,
+				E958CB43162DB2BF004BFBA7 /* XEPBlockTypes.plist */,
+				E958CB44162DB2BF004BFBA7 /* XEPComment.lua */,
+				E958CB45162DB2BF004BFBA7 /* XEPPreferences.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E91FF646162B0B350041D73F /* XEPInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				E91FF647162B0B350041D73F /* XEPInstaller.pmdoc */,
+			);
+			path = XEPInstaller;
+			sourceTree = "<group>";
+		};
+		E91FF647162B0B350041D73F /* XEPInstaller.pmdoc */ = {
+			isa = PBXGroup;
+			children = (
+				E91FF648162B0B350041D73F /* 01xep-contents.xml */,
+				E91FF649162B0B350041D73F /* 01xep.xml */,
+				E91FF64A162B0B350041D73F /* index.xml */,
+			);
+			path = XEPInstaller.pmdoc;
+			sourceTree = "<group>";
+		};
+		E92D376C16280A620030E78E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E958CB4C162DB2C8004BFBA7 /* NSFLog.h */,
+				E958CB4D162DB2C8004BFBA7 /* NSFLog.m */,
+				E958CB4E162DB2C8004BFBA7 /* NSLineString.h */,
+				E958CB4F162DB2C8004BFBA7 /* NSLineString.m */,
+				E958CB50162DB2C8004BFBA7 /* NSLua.h */,
+				E958CB51162DB2C8004BFBA7 /* NSLua.m */,
+				E958CB52162DB2C8004BFBA7 /* RegexKitLite.h */,
+				E958CB53162DB2C8004BFBA7 /* RegexKitLite.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		E993D01A1625578C00601734 = {
+			isa = PBXGroup;
+			children = (
+				E91FF646162B0B350041D73F /* XEPInstaller */,
+				E92D376C16280A620030E78E /* Library */,
+				E90BA8571626B4D700FB7F87 /* Resources */,
+				E993D02A1625578C00601734 /* XEP */,
+				E993D0271625578C00601734 /* Frameworks */,
+				E993D0261625578C00601734 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E993D0261625578C00601734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E993D0251625578C00601734 /* XEP.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E993D0271625578C00601734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92D37691627FE2A0030E78E /* DVTKit.framework */,
+				E92D377016280BC40030E78E /* libicucore.dylib */,
+				E98F5B11162694870062D8BD /* IDEKit.framework */,
+				E993D05E16255CA000601734 /* AppKit.framework */,
+				E993D0281625578C00601734 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E993D02A1625578C00601734 /* XEP */ = {
+			isa = PBXGroup;
+			children = (
+				E9E7375B1627A95D006758D9 /* GeneralDef.h */,
+				E993D05A16255C1C00601734 /* XEPPluginBase.h */,
+				E993D05B16255C1C00601734 /* XEPPluginBase.m */,
+				E993D05716255B9F00601734 /* XEPPluginMgr.h */,
+				E993D05816255B9F00601734 /* XEPPluginMgr.m */,
+				E993D05D16255C4A00601734 /* XEPDef.h */,
+				E993D06416255E5400601734 /* XEPMenu.h */,
+				E993D06516255E5500601734 /* XEPMenu.m */,
+				E9E737541627A648006758D9 /* XEPPreferences.h */,
+				E9E737551627A648006758D9 /* XEPPreferences.m */,
+				E9E737931627C155006758D9 /* XEPPreferences.xib */,
+				E922911B1631568000412B8A /* XEPXcode.h */,
+				E922911C1631568000412B8A /* XEPXcode.m */,
+				E922912316315EC900412B8A /* XEPCfg.h */,
+				E922912416315EC900412B8A /* XEPCfg.m */,
+				E95941831631D0A4007431B9 /* XEPLua.h */,
+				E95941841631D0A4007431B9 /* XEPLua.m */,
+				E993D02B1625578C00601734 /* Supporting Files */,
+			);
+			path = XEP;
+			sourceTree = "<group>";
+		};
+		E993D02B1625578C00601734 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E993D02C1625578C00601734 /* XEP-Info.plist */,
+				E993D02D1625578C00601734 /* InfoPlist.strings */,
+				E993D0301625578C00601734 /* XEP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E993D0241625578C00601734 /* XEP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E993D0331625578C00601734 /* Build configuration list for PBXNativeTarget "XEP" */;
+			buildPhases = (
+				E993D0211625578C00601734 /* Sources */,
+				E993D0221625578C00601734 /* Frameworks */,
+				E993D0231625578C00601734 /* Resources */,
+				E993D053162558D300601734 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XEP;
+			productName = XEP;
+			productReference = E993D0251625578C00601734 /* XEP.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E993D01C1625578C00601734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XEP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Centny;
+			};
+			buildConfigurationList = E993D01F1625578C00601734 /* Build configuration list for PBXProject "XEP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E993D01A1625578C00601734;
+			productRefGroup = E993D0261625578C00601734 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E993D0241625578C00601734 /* XEP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E993D0231625578C00601734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E993D02F1625578C00601734 /* InfoPlist.strings in Resources */,
+				E9E737941627C155006758D9 /* XEPPreferences.xib in Resources */,
+				E91FF64B162B0B350041D73F /* 01xep-contents.xml in Resources */,
+				E91FF64C162B0B350041D73F /* 01xep.xml in Resources */,
+				E91FF64D162B0B350041D73F /* index.xml in Resources */,
+				E958CB46162DB2BF004BFBA7 /* PrjEnv.cfg in Resources */,
+				E958CB47162DB2BF004BFBA7 /* uncrustify.cfg in Resources */,
+				E958CB48162DB2BF004BFBA7 /* XEP.png in Resources */,
+				E958CB49162DB2BF004BFBA7 /* XEPBlockTypes.plist in Resources */,
+				E958CB4A162DB2BF004BFBA7 /* XEPComment.lua in Resources */,
+				E958CB4B162DB2BF004BFBA7 /* XEPPreferences.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E993D053162558D300601734 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = set;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E993D0211625578C00601734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E993D05916255B9F00601734 /* XEPPluginMgr.m in Sources */,
+				E993D05C16255C1C00601734 /* XEPPluginBase.m in Sources */,
+				E993D06616255E5500601734 /* XEPMenu.m in Sources */,
+				E9E737571627A648006758D9 /* XEPPreferences.m in Sources */,
+				E958CB54162DB2C8004BFBA7 /* NSFLog.m in Sources */,
+				E958CB55162DB2C8004BFBA7 /* NSLineString.m in Sources */,
+				E958CB56162DB2C8004BFBA7 /* NSLua.m in Sources */,
+				E958CB57162DB2C8004BFBA7 /* RegexKitLite.m in Sources */,
+				E922911D1631568000412B8A /* XEPXcode.m in Sources */,
+				E922912516315ECA00412B8A /* XEPCfg.m in Sources */,
+				E95941851631D0A4007431B9 /* XEPLua.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E993D02D1625578C00601734 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E993D02E1625578C00601734 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E993D0311625578C00601734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E993D0321625578C00601734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E993D0341625578C00601734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XEP/XEP-Prefix.pch";
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "XEP/XEP-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = /Developer;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = /opt/local/lib/liblua.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		E993D0351625578C00601734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XEP/XEP-Prefix.pch";
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "XEP/XEP-Info.plist";
+				INSTALL_PATH = /Build/;
+				LD_RUNPATH_SEARCH_PATHS = /Developer;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = /opt/local/lib/liblua.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E993D01F1625578C00601734 /* Build configuration list for PBXProject "XEP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E993D0311625578C00601734 /* Debug */,
+				E993D0321625578C00601734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E993D0331625578C00601734 /* Build configuration list for PBXNativeTarget "XEP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E993D0341625578C00601734 /* Debug */,
+				E993D0351625578C00601734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E993D01C1625578C00601734 /* Project object */;
+}

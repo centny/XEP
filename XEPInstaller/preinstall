@@ -1,0 +1,13 @@
+#!/bin/sh
+idir="$HOME/Library/Application Support/Developer/Shared/Xcode/Plug-ins"
+if [ ! -d "$idir" ];then
+ echo "install directory no exist"
+ exit
+fi
+cd "$idir"
+if [ -d "XEP.xcplugin" ];then
+ echo "remove old plugin"
+ rm -rf XEP.xcplugin
+fi
+echo "Preinstall end"
+

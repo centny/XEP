@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>uncrustify</key>
+	<string>/usr/local/bin/uncrustify</string>
+	<key>format.file.extend</key>
+	<array>
+		<string>mm</string>
+		<string>m</string>
+		<string>h</string>
+		<string>hpp</string>
+	</array>
+	<key>uncrustify.cfg</key>
+	<string>$(XEP_HOME)/Contents/Resources/uncrustify.cfg</string>
+	<key>PrjCfgFile</key>
+	<string>$(PROJECT_DIR)/.PrjEnv.cfg</string>
+</dict>
+</plist>
