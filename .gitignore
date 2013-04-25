@@ -1,2 +1,7 @@
 
 .DS_Store
+
+XEP.xcodeproj/xcuserdata/*
+XEP.xcodeproj/project.xcworkspace/xcuserdata/*
+XEP_T/XEP_T.xcodeproj/project.xcworkspace/xcuserdata/*
+XEP_T/XEP_T.xcodeproj/xcuserdata/*
