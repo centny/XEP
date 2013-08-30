@@ -127,10 +127,10 @@
 	return [[[NSString alloc] initWithBytes:data length:len encoding:NSUTF8StringEncoding] autorelease];
 }
 
-- (size_t)objlen:(int)idx
-{
-	return lua_objlen(_l, idx);
-}
+//- (size_t)objlen:(int)idx
+//{
+//	return lua_objlen(_l, idx);
+//}
 
 - (lua_State *)tothread:(int)idx
 {

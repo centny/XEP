@@ -34,7 +34,7 @@
 - (int)toboolean:(int)idx;
 - (const char *)tolstring:(int)idx len:(size_t *)len;
 - (NSString *)toNSString:(int)idx;
-- (size_t)objlen:(int)idx;
+//- (size_t)objlen:(int)idx;
 - (lua_State *)tothread:(int)idx;
 - (const void *)topointer:(int)idx;
 //
