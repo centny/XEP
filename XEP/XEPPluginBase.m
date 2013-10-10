@@ -23,7 +23,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
-	NSDLog(@"applicationDidFinishLaunching...%@", @"");
+	NSLog(@"applicationDidFinishLaunching...%@", @"");
 }
 
 - (void)dealloc

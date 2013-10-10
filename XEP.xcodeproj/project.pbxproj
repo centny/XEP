@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C36E038118069B9C00DD9D8C /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C36E038018069B9C00DD9D8C /* liblua.a */; };
 		E91FF64B162B0B350041D73F /* 01xep-contents.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF648162B0B350041D73F /* 01xep-contents.xml */; };
 		E91FF64C162B0B350041D73F /* 01xep.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF649162B0B350041D73F /* 01xep.xml */; };
 		E91FF64D162B0B350041D73F /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91FF64A162B0B350041D73F /* index.xml */; };
@@ -37,6 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C36E037A18069B9C00DD9D8C /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		C36E037B18069B9C00DD9D8C /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		C36E037C18069B9C00DD9D8C /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		C36E037D18069B9C00DD9D8C /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		C36E037E18069B9C00DD9D8C /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		C36E038018069B9C00DD9D8C /* liblua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblua.a; sourceTree = "<group>"; };
 		E91FF648162B0B350041D73F /* 01xep-contents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "01xep-contents.xml"; sourceTree = "<group>"; };
 		E91FF649162B0B350041D73F /* 01xep.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 01xep.xml; sourceTree = "<group>"; };
 		E91FF64A162B0B350041D73F /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xml; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36E038118069B9C00DD9D8C /* liblua.a in Frameworks */,
 				E92D377116280BC40030E78E /* libicucore.dylib in Frameworks */,
 				E993D05F16255CA000601734 /* AppKit.framework in Frameworks */,
 				E993D0291625578C00601734 /* CoreFoundation.framework in Frameworks */,
@@ -98,6 +106,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C36E037818069B9C00DD9D8C /* liblua */ = {
+			isa = PBXGroup;
+			children = (
+				C36E037918069B9C00DD9D8C /* include */,
+				C36E037F18069B9C00DD9D8C /* lib */,
+			);
+			path = liblua;
+			sourceTree = "<group>";
+		};
+		C36E037918069B9C00DD9D8C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C36E037A18069B9C00DD9D8C /* lauxlib.h */,
+				C36E037B18069B9C00DD9D8C /* lua.h */,
+				C36E037C18069B9C00DD9D8C /* lua.hpp */,
+				C36E037D18069B9C00DD9D8C /* luaconf.h */,
+				C36E037E18069B9C00DD9D8C /* lualib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C36E037F18069B9C00DD9D8C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C36E038018069B9C00DD9D8C /* liblua.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		E90BA8571626B4D700FB7F87 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +184,7 @@
 		E993D01A1625578C00601734 = {
 			isa = PBXGroup;
 			children = (
+				C36E037818069B9C00DD9D8C /* liblua */,
 				E91FF646162B0B350041D73F /* XEPInstaller */,
 				E92D376C16280A620030E78E /* Library */,
 				E90BA8571626B4D700FB7F87 /* Resources */,
@@ -239,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = XEP;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Centny;
 			};
 			buildConfigurationList = E993D01F1625578C00601734 /* Build configuration list for PBXProject "XEP" */;
@@ -333,7 +371,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -362,7 +399,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -387,7 +423,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_EMPTY_BODY = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
-				COMBINE_HIDPI_IMAGES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -400,7 +436,6 @@
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -408,11 +443,11 @@
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "XEP/XEP-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				LD_RUNPATH_SEARCH_PATHS = /Developer;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = /Users/cny/git/XEP/liblua/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = /usr/local/lib/liblua.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +464,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_EMPTY_BODY = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
-				COMBINE_HIDPI_IMAGES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -442,7 +477,6 @@
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_GC = supported;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -450,11 +484,11 @@
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "XEP/XEP-Info.plist";
-				INSTALL_PATH = /Build/;
+				INSTALL_PATH = Build/;
 				LD_RUNPATH_SEARCH_PATHS = /Developer;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = /Users/cny/git/XEP/liblua/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = /usr/local/lib/liblua.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";

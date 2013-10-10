@@ -35,6 +35,7 @@ typedef enum CopyDirection {
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
+    NSLog(@"%@ applicationDidFinishLaunching...", self);
 	NSMenu		*menu	= [NSApp mainMenu];
 	NSArray		*items	= [menu itemArray];
 	NSMenuItem	*mi		= [[NSMenuItem alloc] initWithTitle:@"XEP" action:nil keyEquivalent:@""];
@@ -305,7 +306,7 @@ typedef enum CopyDirection {
 - (NSMutableArray *)findOldComment:(NSLineString *)ls cline:(NSUInteger)cline range:(NSRange *)rg
 {
 	NSMutableArray	*clines = [NSMutableArray array];
-	NSUInteger		sline, eline = cline - 1;
+	NSUInteger		sline=0, eline = cline - 1;
 
 	for (int idx = (int)cline - 1; idx >= 0; idx--) {
 		NSString *line = [[ls stringOfLineNumber:idx] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

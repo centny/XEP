@@ -16,7 +16,7 @@
 //
 static NSMutableArray	*gRegisteredClasses = nil;
 static NSMutableArray	*gPlugins			= nil;
-static NSString			*gEditingFileLock	= @"gEditingFileLock";
+//static NSString			*gEditingFileLock	= @"gEditingFileLock";
 static NSURL			*gEditingFile		= nil;
 static NSMutableArray	*gProejcts			= nil;
 //
@@ -30,18 +30,17 @@ static NSMutableArray	*gProejcts			= nil;
 		if (!gRegisteredClasses) {
 			gRegisteredClasses = [[NSMutableArray alloc] init];
 		}
-
 		if (cls) {
 			[gRegisteredClasses addObject:cls];
 		}
-
-		NSDLog(@"register class:%@", [cls description]);
+		NSLog(@"register class:%@", [cls description]);
 	}
 }
 
 + (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
 	//
+    NSLog(@"%@ applicationDidFinishLaunching,plugins:%ld",self,gPlugins.count);
 	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 
 	[nc removeObserver	:self

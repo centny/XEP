@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E3CAC1F2-86A2-45A2-A6C7-2CE864AB22E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XEP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACDD1559-A06D-4563-906A-7A25B077D954</key>
+		<string>https://github.com/Centny/XEP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XEP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACDD1559-A06D-4563-906A-7A25B077D954</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Centny/XEP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACDD1559-A06D-4563-906A-7A25B077D954</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACDD1559-A06D-4563-906A-7A25B077D954</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XEP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
